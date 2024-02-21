@@ -3,6 +3,6 @@
   hosts: node2
   # this is list of tasks/modules/collections
   tasks:
-   - name: Pinging the server
-     # this is the map
-     ansible.bulitin.ping:
+  - name: Pinging the server
+    # this is the map
+    ansible.bulitin.ping:
