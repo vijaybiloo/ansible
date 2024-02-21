@@ -1,6 +1,6 @@
 # Playbook is list f plays, always it should start with an (ifen) -
 - name: ping the node
-  hosts: mongodb
+  hosts: node2
   # this is list of tasks/modules/collections
   tasks:
   - name: Pinging the server
