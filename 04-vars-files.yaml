@@ -1,5 +1,5 @@
 - name: variables from files
-  hosts: locathost #managing the ansible server itself
+  hosts: node2 #if localhost we can managing the ansible server itself
   vars_files:
   - variables.yaml
   tasks:
