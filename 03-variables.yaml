@@ -1,0 +1,14 @@
+- name: Variable in ansible at play level
+  hosts: node2
+  # this is play level variables, map
+  vars:
+    COURSE: Devops with AWS
+    TRAINER: Siva Kumar Reddy
+    DURATION: 110hrs
+  tasks:
+  - name: Print Hello Krishna
+    ansible.builtin.debug:
+      msg: "Hello, I love Krishna"
+  - name:
+    ansible.builtin.debug:
+      msg: "Hello, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}}"
