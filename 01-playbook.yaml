@@ -5,4 +5,4 @@
   tasks:
   - name: Pinging the server
     # this is the map
-    ansible.bulitin.ping:
+    ansible.builtin.ping:
