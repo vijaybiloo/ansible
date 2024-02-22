@@ -1,0 +1,36 @@
+- name: ansible variable data types
+  hosts: node2
+  vars:
+  - AGE: 40 #interger(number)
+  - NAME: "Vijay Deepak" #string
+  - isDevOps: true #boolean
+  - Skills: #list
+    - DevOps
+    - AWS
+    - GCP
+    - Docker
+    - Linux
+    - BIU
+  - EXPERIENCE: #map
+      DevOps: 3
+      AWS: 3
+      GCP: 4
+      Docker : 2
+      Linux: 5
+      BIU: 1
+  tasks:
+  - name: print number variable
+    ansible.builin.debug:
+      msg: "{{AGE}}"
+  - name: print SAtring variable
+    ansible.builtin.debug:
+      msg: "{{NAME}}"
+  - name: print the boolean variable
+    ansible.builtin.debug:
+      msg: "{{isDevOps}}"
+  - name: print the list variable
+    ansible.builtin.debug:
+      msg: "{{Skills}}"
+  - name: print map variable
+    ansible.builtin.debug:
+      msg: "{{EXPERIENCE}}"

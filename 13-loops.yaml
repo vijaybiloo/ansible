@@ -1,0 +1,12 @@
+- name:
+  hosts: node2
+  tasks:
+  - name: print the names
+    ansible.builtin.debug:
+      msg: "Hello {{item}}"
+    loop:
+    - Vijay
+    - Sivakumar reddy
+    - Krishnabai
+    - Pandu Ranga Rao
+    - Billoo

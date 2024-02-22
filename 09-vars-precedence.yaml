@@ -1,0 +1,22 @@
+- name: testing variable precedence
+  hosts: node2
+  # vars:
+  #   NAME: Siva kumar reddy-play
+  # vars_files:
+  # - variable.yaml
+  # vars_prompt:
+  # - name: NAME
+  #   prompt: Please enter Trainer Name
+  #   private: false
+  tasks:
+  - name: varable at task level
+    ansible.builtin.debug:
+      msg: "Trainer name is: {{NAME}}"
+
+# 1. command line variables
+# 2. task level
+# 3. vars_files
+# 4. prompt
+# 5. play
+# 6. inventory
+# 7. Roles
