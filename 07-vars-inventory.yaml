@@ -1,0 +1,6 @@
+- name: variable from inventory
+  hosts: node2
+  tasks:
+  - name: print node2 username
+    ansible.builtin.debug:
+      msg: "username is {{NODE2_USERNAME}}"
